@@ -2,7 +2,10 @@ import React from 'react'
 
 function InputBox() {
   return (
-    <div>InputBox</div>
+    <div >
+      <label>Label</label>
+      <input />
+    </div>
   )
 }
 
