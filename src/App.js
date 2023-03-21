@@ -17,9 +17,9 @@ function App() {
 
   return (
     <div>
-      <InputBox />
-      <InputBox />
-      <InputBox />
+      <InputBox label={"Description"} setAttribute={setUserPrompt} />
+      <InputBox label={"Amount"} setAttribute={setNumber} />
+      <InputBox label={"Size"} setAttribute={setSize} />
       <button >Create</button>
     </div>
   );
