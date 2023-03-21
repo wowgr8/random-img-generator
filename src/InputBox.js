@@ -1,10 +1,10 @@
 import React from 'react'
 
-function InputBox() {
+function InputBox({ label, setAttribute }) {
   return (
     <div >
-      <label>Label</label>
-      <input />
+      <label>{label}</label>
+      <input onChange={(e) => setAttribute(e.target.value)}/>
     </div>
   )
 }
