@@ -1,12 +1,12 @@
 import './App.css';
+import InputBox from './InputBox';
 
 function App() {
   return (
     <div>
-      <div >
-        <label>Label</label>
-        <input />
-      </div>
+      <InputBox />
+      <InputBox />
+      <InputBox />
       <button ></button>
     </div>
   );
