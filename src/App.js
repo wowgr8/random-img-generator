@@ -7,7 +7,7 @@ function App() {
       <InputBox />
       <InputBox />
       <InputBox />
-      <button ></button>
+      <button >Create</button>
     </div>
   );
 }
