@@ -28,7 +28,7 @@ function App() {
     //   setImageUrl(urlData);
     // };
     try {
-      const response = await axios.post('/generate-image', imageParams);
+      const response = await axios.post('http://localhost:3002/generate-image', imageParams);
       const urlData = response.data.data[0].url;
       setImageUrl(urlData);
     } catch (error) {
