@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import './App.css';
 import InputBox from './InputBox';
 import { Configuration, OpenAIApi } from 'openai';
+import axios from 'axios';
 
 const configuration = new Configuration({
   apiKey: process.env.REACT_APP_API_KEY,
@@ -22,10 +23,19 @@ function App() {
       size: size,
     };
     
-    const response = await openai.createImage(imageParams);
-    const urlData = response.data.data[0].url;
-    setImageUrl(urlData);
-  };
+    //   const response = await openai.createImage(imageParams);
+    //   const urlData = response.data.data[0].url;
+    //   setImageUrl(urlData);
+    // };
+    try {
+      const response = await axios.post('/generate-image', imageParams);
+      const urlData = response.data.data[0].url;
+      setImageUrl(urlData);
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
 
   return (
     <div>
