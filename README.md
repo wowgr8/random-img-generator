@@ -4,7 +4,7 @@
 
 ### _March 10, 2023_
 
-#### _A React app for ......_
+#### _A React app for generating unique AI images based on user prompts_
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)
 
